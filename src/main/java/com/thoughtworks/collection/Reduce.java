@@ -69,7 +69,12 @@ public class Reduce {
     }
 
     public boolean isEqual(List<Integer> arrayList) {
-        throw new NotImplementedException();
+        try {
+            return this.arrayList.stream().sorted().collect(Collectors.toList())
+                    .equals(arrayList.stream().sorted().collect(Collectors.toList()));
+        }catch (Exception e){
+            throw new NotImplementedException();
+        }
     }
 
     public Double getMedianInLinkList(SingleLink singleLink) {
