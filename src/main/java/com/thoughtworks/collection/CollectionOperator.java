@@ -12,7 +12,6 @@ public class CollectionOperator {
     public List<Integer> getListByInterval(int left, int right) {
         List<Integer> list = new ArrayList<>();
         try {
-
             for (int i = left; i != right; i = left < right ? i + 1 : i - 1) {
                 list.add(i);
             }

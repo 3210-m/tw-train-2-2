@@ -60,6 +60,8 @@ public class ReduceTest {
         assertThat(evenReduce.getOrderedMedian()).isEqualTo(1.5);
     }
 
+    //5
+
     @Test
     public void should_get_element_in_middle_position_in_linkList_when_even_size() {
         Integer[] array = new Integer[]{1, 4, 6, 2, 3, 10, 9, 8, 11, 2, 19, 30};
